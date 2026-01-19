@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Type de carte -->
+    <item
+        android:id="@+id/menu_map_type"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="Type de carte"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/map_type_normal"
+                android:title="Normal"
+                android:checkable="true"
+                android:checked="true" />
+
+            <item
+                android:id="@+id/map_type_satellite"
+                android:title="Satellite"
+                android:checkable="true" />
+
+            <item
+                android:id="@+id/map_type_terrain"
+                android:title="Terrain"
+                android:checkable="true" />
+
+            <item
+                android:id="@+id/map_type_hybrid"
+                android:title="Hybride"
+                android:checkable="true" />
+        </menu>
+    </item>
+
+    <!-- Effacer les marqueurs -->
+    <item
+        android:id="@+id/menu_clear_markers"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Effacer marqueurs"
+        app:showAsAction="ifRoom" />
+
+    <!-- Ma position -->
+    <item
+        android:id="@+id/menu_my_location"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        android:title="Ma position"
+        app:showAsAction="ifRoom" />
+
+</menu>
